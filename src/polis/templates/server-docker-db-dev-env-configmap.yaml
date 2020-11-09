@@ -1,0 +1,11 @@
+apiVersion: v1
+data:
+  POSTGRES_DB: polis-dev
+  POSTGRES_PASSWORD: oiPorg3Nrz0yqDLE
+  POSTGRES_USER: postgres
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  labels:
+    io.kompose.service: postgres-server-docker-db-dev-env
+  name: server-docker-db-dev-env

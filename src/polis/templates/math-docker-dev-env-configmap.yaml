@@ -1,0 +1,11 @@
+apiVersion: v1
+data:
+  DATABASE_URL: postgres://postgres:oiPorg3Nrz0yqDLE@postgres:5432/polis-dev
+  WEBSERVER_PASS: ws-pass
+  WEBSERVER_USERNAME: ws-user
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  labels:
+    io.kompose.service: math-math-docker-dev-env
+  name: math-docker-dev-env
