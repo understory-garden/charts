@@ -2,8 +2,19 @@ apiVersion: v1
 entries:
   polis:
   - apiVersion: v2
+    appVersion: 0.1.1
+    created: "2020-11-22T15:15:15.558933-08:00"
+    description: A Helm chart for deploying pol.is to Kubernetes. Generated automatically
+      using Kompose
+    digest: 7115ecda8a12d6229fb06e500b31fa378533e519f3612fb43d64c5d8dbce4fe2
+    name: polis
+    type: application
+    urls:
+    - https://itme.github.io/charts/polis-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
     appVersion: 0.1.0
-    created: "2020-11-09T13:56:16.736573-08:00"
+    created: "2020-11-22T15:15:15.558515-08:00"
     description: A Helm chart for deploying pol.is to Kubernetes. Generated automatically
       using Kompose
     digest: e9f6eef5e763acab97ce655457145ceac516d475a0c909e6eb9472559cfb1c87
@@ -12,4 +23,4 @@ entries:
     urls:
     - https://itme.github.io/charts/polis-0.1.0.tgz
     version: 0.1.0
-generated: "2020-11-09T13:56:16.735803-08:00"
+generated: "2020-11-22T15:15:15.557208-08:00"
