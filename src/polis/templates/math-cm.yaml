@@ -5,7 +5,4 @@ data:
   WEBSERVER_USERNAME: ws-user
 kind: ConfigMap
 metadata:
-  creationTimestamp: null
-  labels:
-    io.kompose.service: math-math-docker-dev-env
-  name: math-docker-dev-env
+  name: polis-math

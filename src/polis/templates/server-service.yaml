@@ -1,19 +1,15 @@
 apiVersion: v1
 kind: Service
 metadata:
-  annotations:
-    kompose.cmd: kompose convert
-    kompose.version: 1.21.0 ()
-  creationTimestamp: null
   labels:
-    io.kompose.service: server
-  name: server
+    app: polis-server
+  name: polis-server
 spec:
   ports:
-  - name: "5000"
+  - name: polis-server
     port: 5000
     targetPort: 5000
   selector:
-    io.kompose.service: server
+    app: polis-server
 status:
   loadBalancer: {}
