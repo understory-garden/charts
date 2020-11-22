@@ -2,14 +2,14 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: polis-server
+    app: polis
   name: polis-server
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        app: polis-server
+        app: polis
     spec:
       containers:
       - env:

@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: polis-server
+    app: polis
   name: polis-server
 spec:
   ports:
@@ -10,6 +10,6 @@ spec:
     port: 5000
     targetPort: 5000
   selector:
-    app: polis-server
+    app: polis
 status:
   loadBalancer: {}

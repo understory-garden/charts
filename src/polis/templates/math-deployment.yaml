@@ -2,14 +2,14 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: polis-math
+    app: polis
   name: polis-math
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        app: polis-math
+        app: polis
     spec:
       containers:
       - env:

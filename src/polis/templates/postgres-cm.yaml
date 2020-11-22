@@ -5,7 +5,6 @@ data:
   POSTGRES_USER: postgres
 kind: ConfigMap
 metadata:
-  creationTimestamp: null
   labels:
-    io.kompose.service: postgres-server-docker-db-dev-env
-  name: server-docker-db-dev-env
+    app: polis
+  name: polis-postgres
