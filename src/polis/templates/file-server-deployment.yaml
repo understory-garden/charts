@@ -20,4 +20,14 @@ spec:
         name: polis-file-server
         ports:
         - containerPort: 8080
+      initContainers:
+      - image: polisdemo/client-participation:dev
+        imagePullPolicy: Always
+        name: polis-client-participation
+      - image: polisdemo/client-admin:dev
+        imagePullPolicy: Always
+        name: polis-client-admin
+      - image: polisdemo/client-report:dev
+        imagePullPolicy: Always
+        name: polis-client-report
       restartPolicy: Always
