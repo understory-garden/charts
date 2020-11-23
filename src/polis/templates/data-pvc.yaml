@@ -2,7 +2,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   labels:
-    app: polis
+    app: polis-postgres
   name: polis-data
 spec:
   accessModes:

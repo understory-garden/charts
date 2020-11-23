@@ -2,17 +2,17 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: polis
+    app: polis-file-server
   name: polis-file-server
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: polis
+      app: polis-file-server
   template:
     metadata:
       labels:
-        app: polis
+        app: polis-file-server
     spec:
       containers:
       - image: polisdemo/file-server:dev

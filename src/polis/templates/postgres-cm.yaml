@@ -6,5 +6,5 @@ data:
 kind: ConfigMap
 metadata:
   labels:
-    app: polis
+    app: polis-postgres
   name: polis-postgres

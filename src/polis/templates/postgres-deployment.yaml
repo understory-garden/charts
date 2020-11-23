@@ -2,17 +2,17 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: polis
+    app: polis-postgres
   name: polis-postgres
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: polis
+      app: polis-postgres
   template:
     metadata:
       labels:
-        app: polis
+        app: polis-postgres
     spec:
       containers:
       - env:
