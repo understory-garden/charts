@@ -43,9 +43,6 @@ spec:
           subPath: postgres
       restartPolicy: Always
       volumes:
-      - name: polis-backups
+      - name: polis-data
         persistentVolumeClaim:
-          claimName: polis-backups
-      - name: polis-postgres
-        persistentVolumeClaim:
-          claimName: polis-postgres
+          claimName: polis-data
