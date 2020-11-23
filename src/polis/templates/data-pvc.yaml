@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   labels:
     app: polis
-  name: polis-backups
+  name: polis-data
 spec:
   accessModes:
   - ReadWriteOnce

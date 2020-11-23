@@ -36,9 +36,11 @@ spec:
         name: polis-postgres
         volumeMounts:
         - mountPath: /backups
-          name: polis-backups
-        - mountPath: /var/lib/postgresql/data
-          name: polis-postgres
+          name: polis-data
+          subPath: backups
+        - mountPath: /var/lib/postgresql
+          name: polis-data
+          subPath: postgres
       restartPolicy: Always
       volumes:
       - name: polis-backups
