@@ -6,6 +6,9 @@ metadata:
   name: polis-server
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: polis
   template:
     metadata:
       labels:

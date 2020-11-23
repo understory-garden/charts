@@ -6,10 +6,13 @@ metadata:
   name: polis-client-report
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: polis
   template:
     metadata:
       labels:
-        app: polis-client-report
+        app: polis
     spec:
       containers:
       - image: polisdemo/client-report:dev
