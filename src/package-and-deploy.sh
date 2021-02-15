@@ -12,6 +12,10 @@ repo=$(git rev-parse --show-toplevel)/docs
 
 helm package $dir
 chart=$(find . -name "$dir-*.tgz" | sed "s|^\./||")
+if ([ -z "$chart" ]); then
+  echo "Could not find packaged chart. This likely means the directory name and the name in the Chart.yaml do not match. You may want to clean up any generated helm files before re-running."
+  exit 1
+fi
 mv $chart $repo
 helm repo index $repo --url https://itme.github.io/charts/
 
