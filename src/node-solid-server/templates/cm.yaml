@@ -1,0 +1,46 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-cm
+data:
+  json: |-
+    {
+      "root": "/opt/solid/data",
+      "port": {{ .Values.image.port | quote }},
+      "serverUri": {{ printf "https://%s" .Values.host | quote }},
+      "webid": true,
+      "mount": "/",
+      "configPath": "/opt/solid/config",
+      "dbPath": "/opt/solid/db",
+      "sslKey": "/opt/ssl/tls.key",
+      "sslCert": "/opt/ssl/tls.crt",
+      "multiuser": true,
+      "corsProxy": "/xss",
+      "supportEmail": "root@itme.host",
+      "useEmail": true,
+      "emailHost": {{ .Values.emailCredentials.host | quote }},
+      "emailFrom": {{ .Values.emailCredentials.from | quote }},
+      "emailPort": {{ .Values.emailCredentials.port | quote }},
+      "emailDebug": true,
+      "emailAuthUser": {{ .Values.emailCredentials.user | quote }},
+      "emailAuthPass": {{ .Values.emailCredentials.password | quote }},
+      "enforceToc": false,
+      "disableRegistration": false,
+      "sendEmailsToRoot": {{ .Values.sendEmailsToRoot }},
+
+      "server": {
+        "name": {{ .Values.info.name | quote }},
+        "description": {{ .Values.info.description | quote }},
+        "logo": {{ .Values.info.logo | quote }}
+      },
+      "users": [
+{{- range $index, $user := .Values.users }}
+      {{- if $index}},{{end}}
+      {
+        "username": {{ $user.username | quote }},
+        "email": {{ $user.email | quote }}
+      }
+{{- end}}
+      ]
+    }
+

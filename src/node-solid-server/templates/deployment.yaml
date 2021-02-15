@@ -1,0 +1,56 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}
+spec:
+  selector:
+    matchLabels:
+      app: {{ .Release.Name }}
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: {{ .Release.Name }}
+    spec:
+      containers:
+      - name: {{ .Release.Name }}
+        image: {{ .Values.image.tag }}
+        imagePullPolicy: Always
+        ports:
+        - containerPort: {{ .Values.image.port }}
+        env:
+          - name: SOLID_CONFIG_FILE
+            value: "/opt/cm/config.json"
+          - name: DEBUG
+            value: "solid:*"
+        {{- with .Values.image.env}}
+          {{- toYaml . | nindent 10 }}
+        {{- end }}
+        volumeMounts:
+          - name: {{ .Release.Name }}-tls
+            mountPath: "/opt/ssl"
+            readOnly: true
+          - name: {{ .Release.Name }}-data
+            mountPath: "/opt/solid/data"
+          - name: {{ .Release.Name }}-db
+            mountPath: "/opt/solid/db"
+          - name: {{ .Release.Name }}-config
+            mountPath: "/opt/cm"
+      volumes:
+        - name: {{ .Release.Name }}-tls
+          secret:
+            secretName: {{ .Release.Name }}-tls
+        - name: {{ .Release.Name }}-data
+          persistentVolumeClaim:
+            claimName: {{ .Release.Name }}-data-pvc
+        - name: {{ .Release.Name }}-db
+          persistentVolumeClaim:
+            claimName: {{ .Release.Name }}-db-pvc
+        - name: {{ .Release.Name }}-config
+          configMap:
+            name: {{ .Release.Name }}-cm
+            items:
+            - key: json
+              path: config.json
+      imagePullSecrets:
+      - name: {{ .Release.Name }}-image-pull-secret
