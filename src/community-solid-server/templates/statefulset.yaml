@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: {{ .Release.Name }}
-  serviceName: {{ .Release.name | quote }}
+  serviceName: {{ .Release.Name }}
   replicas: 1
   template:
     metadata:
