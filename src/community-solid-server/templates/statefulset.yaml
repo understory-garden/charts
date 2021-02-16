@@ -25,13 +25,13 @@ spec:
           mountPath: /var/lib/solid/data
       imagePullSecrets:
       - name: {{ .Release.Name }}-image-pull-secret
-    volumeClaimTemplates:
-    - metadata:
-        name: {{ .Release.Name }}-data
-      spec:
-        accessModes:
-          - ReadWriteOnce
-        storageClassName: gp2
-        resources:
-          requests:
-            storage: {{ .Values.volumeSize }}
+  volumeClaimTemplates:
+  - metadata:
+      name: {{ .Release.Name }}-data
+    spec:
+      accessModes:
+        - ReadWriteOnce
+      storageClassName: gp2
+      resources:
+        requests:
+          storage: {{ .Values.volumeSize }}
