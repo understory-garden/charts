@@ -17,7 +17,12 @@ spec:
       containers:
       - name: {{ .Release.Name }}
         image: {{ .Values.image.tag }}
-        args: [ "-c", {{ .Values.solid.config }}, "-f", "/var/lib/solid/data", "-p", "80", "-b", {{ .Values.host }} ]
+        args: [
+          "-c", {{ .Values.solid.config }},
+          "-f", "/var/lib/solid/data",
+          "-p", "80",
+          "-b", {{ printf "https://%s/" .Values.host | quote }}
+        ]
         ports:
         - containerPort: {{ .Values.image.port }}
           name: web
