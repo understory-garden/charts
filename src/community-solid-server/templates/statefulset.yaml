@@ -18,9 +18,9 @@ spec:
       - name: {{ .Release.Name }}
         image: {{ .Values.image.tag }}
         args: [
-          "-c", {{ .Values.solid.config }},
+          "-c", {{ .Values.solid.config | quote }},
           "-f", "/var/lib/solid/data",
-          "-p", "80",
+          "-p", {{ .Values.image.port | quote }},
           "-b", {{ printf "https://%s/" .Values.host | quote }}
         ]
         ports:
