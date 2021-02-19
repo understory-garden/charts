@@ -6,4 +6,6 @@ imageCredentials:
   registry: https://index.docker.io/v1/
   email: root@itme.email
 # note: The i at the end is not a typo. https://stackoverflow.com/questions/50804915/kubernetes-size-definitions-whats-the-difference-of-gi-and-g
+solid:
+  config: "config/config-file.json"
 volumeSize: 100Gi
