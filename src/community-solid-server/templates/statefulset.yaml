@@ -21,8 +21,8 @@ spec:
           "--config", {{ .Values.solid.config | quote }},
           "--rootFilePath", "/var/lib/solid/data",
           "--port", {{ .Values.image.port | quote }},
-          "--baseUrl", {{ printf "%s://%s:%s/" "http" .Values.host .Values.port}},
-          "--loggingLevel", {{ .Values.solid.loggingLevel }}
+          "--baseUrl", {{ (printf "%s://%s:%s/" "http" .Values.host .Values.port) | quote }},
+          "--loggingLevel", {{ .Values.solid.loggingLevel | quote }}
         ]
         ports:
         - containerPort: {{ .Values.image.port }}
