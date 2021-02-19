@@ -21,7 +21,8 @@ spec:
           "-c", {{ .Values.solid.config | quote }},
           "-f", "/var/lib/solid/data",
           "-p", {{ .Values.image.port | quote }},
-          "-b", {{ printf "%s://%s:%s/" "http" (.Values.host | quote) (.Values.port | quote)}}
+          "-b", {{ printf "%s://%s:%s/" "http" (.Values.host | quote) (.Values.port | quote)}},
+          "--loggingLevel", {{ .Values.solid.loggingLevel }}
         ]
         ports:
         - containerPort: {{ .Values.image.port }}

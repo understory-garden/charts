@@ -8,4 +8,5 @@ imageCredentials:
 # note: The i at the end is not a typo. https://stackoverflow.com/questions/50804915/kubernetes-size-definitions-whats-the-difference-of-gi-and-g
 solid:
   config: "config/config-file.json"
+  loggingLevel: debug
 volumeSize: 100Gi
