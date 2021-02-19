@@ -18,10 +18,10 @@ spec:
       - name: {{ .Release.Name }}
         image: {{ .Values.image.tag }}
         args: [
-          "-c", {{ .Values.solid.config | quote }},
-          "-f", "/var/lib/solid/data",
-          "-p", {{ .Values.image.port | quote }},
-          "-b", {{ printf "%s://%s:%s/" "http" (.Values.host | quote) (.Values.port | quote)}},
+          "--config", {{ .Values.solid.config | quote }},
+          "--rootFilePath", "/var/lib/solid/data",
+          "--port", {{ .Values.image.port | quote }},
+          "--baseUrl", {{ printf "%s://%s:%s/" "http" (.Values.host | quote) (.Values.port | quote)}},
           "--loggingLevel", {{ .Values.solid.loggingLevel }}
         ]
         ports:
