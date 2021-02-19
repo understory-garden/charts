@@ -10,6 +10,7 @@ fi
 dir=$1
 repo=$(git rev-parse --show-toplevel)/docs
 
+helm lint --debug $dir
 helm package $dir
 chart=$(find . -name "$dir-*.tgz" | sed "s|^\./||")
 if ([ -z "$chart" ]); then
