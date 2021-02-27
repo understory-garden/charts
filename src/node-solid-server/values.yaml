@@ -9,6 +9,12 @@ info:
 imageCredentials:
   registry: https://index.docker.io/v1/
   email: root@itme.email
+emailCredentials:
+  host: "smtp.gmail.com"
+  port: "587"
+  from: "Someone Cool <you@gmail.com>"
+  user: "you@gmail.com"
+  password: "TOP_SECRET"
 sendEmailsToRoot: false
 # note: The i at the end is not a typo. https://stackoverflow.com/questions/50804915/kubernetes-size-definitions-whats-the-difference-of-gi-and-g
 volumeSize: 100Gi
