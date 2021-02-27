@@ -7,7 +7,7 @@ if ! (output=$(git status --porcelain) && [ -z "$output" ]); then
   exit 1
 fi
 
-dir=$1
+dir=${1%/}
 repo=$(git rev-parse --show-toplevel)/docs
 
 helm lint --debug $dir
