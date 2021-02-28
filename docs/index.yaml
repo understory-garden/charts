@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   community-solid-server:
   - apiVersion: v2
-    created: "2021-02-27T17:01:30.832415-08:00"
+    created: "2021-02-27T17:02:14.091689-08:00"
     description: A simple helm chart for deploying community-solid-server. Uses persistent
       volumes and stateful sets.
     digest: 29292162ec797444fb16d135730468491b81de7a35685ddfd796112e7d7fe103
@@ -12,7 +12,7 @@ entries:
     - https://itme.github.io/charts/community-solid-server-0.2.11.tgz
     version: 0.2.11
   - apiVersion: v2
-    created: "2021-02-27T17:01:30.832188-08:00"
+    created: "2021-02-27T17:02:14.091392-08:00"
     description: A simple helm chart for deploying community-solid-server. Uses persistent
       volumes and stateful sets.
     digest: 78669a0ebf0e84de57f14c8a8741b01a9eccf52f035aa7cfc7f82c0dd92cc10e
@@ -22,7 +22,7 @@ entries:
     - https://itme.github.io/charts/community-solid-server-0.2.10.tgz
     version: 0.2.10
   - apiVersion: v2
-    created: "2021-02-27T17:01:30.834216-08:00"
+    created: "2021-02-27T17:02:14.094-08:00"
     description: A simple helm chart for deploying community-solid-server. Uses persistent
       volumes and stateful sets.
     digest: 66803a84f0a7ae592565ec6df8062fddc2f62d27d7649a9049d73bfc87936530
@@ -32,7 +32,7 @@ entries:
     - https://itme.github.io/charts/community-solid-server-0.2.9.tgz
     version: 0.2.9
   - apiVersion: v2
-    created: "2021-02-27T17:01:30.833978-08:00"
+    created: "2021-02-27T17:02:14.093457-08:00"
     description: A simple helm chart for deploying community-solid-server. Uses persistent
       volumes and stateful sets.
     digest: ec0ca635c642105428a71c9d8156eda7474453cd4fa581ec23bec0746cc60ae1
@@ -42,7 +42,7 @@ entries:
     - https://itme.github.io/charts/community-solid-server-0.2.8.tgz
     version: 0.2.8
   - apiVersion: v2
-    created: "2021-02-27T17:01:30.83372-08:00"
+    created: "2021-02-27T17:02:14.0932-08:00"
     description: A simple helm chart for deploying community-solid-server. Uses persistent
       volumes and stateful sets.
     digest: a8d73d7e1e5f4bb58da97f8900facf86ff210c1a5e9ff35a1f3b91c20541eae5
@@ -52,7 +52,7 @@ entries:
     - https://itme.github.io/charts/community-solid-server-0.2.7.tgz
     version: 0.2.7
   - apiVersion: v2
-    created: "2021-02-27T17:01:30.833455-08:00"
+    created: "2021-02-27T17:02:14.092948-08:00"
     description: A simple helm chart for deploying community-solid-server. Uses persistent
       volumes and stateful sets.
     digest: 1a74b4917d680c8fbb057e51604c9ef02ab746d91f0c493708fb8a235ecb969e
@@ -62,7 +62,7 @@ entries:
     - https://itme.github.io/charts/community-solid-server-0.2.6.tgz
     version: 0.2.6
   - apiVersion: v2
-    created: "2021-02-27T17:01:30.833224-08:00"
+    created: "2021-02-27T17:02:14.092682-08:00"
     description: A simple helm chart for deploying community-solid-server. Uses persistent
       volumes and stateful sets.
     digest: 0a99e325d0e711e36922682aafa8f590f68fefefef5e6c7f73fb99e8e384b89d
@@ -72,7 +72,7 @@ entries:
     - https://itme.github.io/charts/community-solid-server-0.2.5.tgz
     version: 0.2.5
   - apiVersion: v2
-    created: "2021-02-27T17:01:30.833019-08:00"
+    created: "2021-02-27T17:02:14.092445-08:00"
     description: A simple helm chart for deploying community-solid-server. Uses persistent
       volumes and stateful sets.
     digest: 9c44261a520aaadf1cd917c361f0aa52c0c3575f19164ac9a49e25f42a2e97d7
@@ -82,7 +82,7 @@ entries:
     - https://itme.github.io/charts/community-solid-server-0.2.4.tgz
     version: 0.2.4
   - apiVersion: v2
-    created: "2021-02-27T17:01:30.832812-08:00"
+    created: "2021-02-27T17:02:14.092181-08:00"
     description: A simple helm chart for deploying community-solid-server. Uses persistent
       volumes and stateful sets.
     digest: eb5027c251bf95368c8fa05a58d5b0fb8347650f28b3b7cb8dba6557114cc42c
@@ -92,7 +92,7 @@ entries:
     - https://itme.github.io/charts/community-solid-server-0.2.3.tgz
     version: 0.2.3
   - apiVersion: v2
-    created: "2021-02-27T17:01:30.832613-08:00"
+    created: "2021-02-27T17:02:14.091934-08:00"
     description: A simple helm chart for deploying community-solid-server. Uses persistent
       volumes and stateful sets.
     digest: 65b90cb134c862348eeb833b1a45310c7e3f0a91fa19cfee54e4eeb008db3b03
@@ -102,7 +102,7 @@ entries:
     - https://itme.github.io/charts/community-solid-server-0.2.2.tgz
     version: 0.2.2
   - apiVersion: v2
-    created: "2021-02-27T17:01:30.831968-08:00"
+    created: "2021-02-27T17:02:14.091142-08:00"
     description: A simple helm chart for deploying community-solid-server. Uses persistent
       volumes and stateful sets.
     digest: ce5559894f9ad9d973cc4efd00489b6558b0b62172a58d44a7446cca6ee52af8
@@ -112,7 +112,7 @@ entries:
     - https://itme.github.io/charts/community-solid-server-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
-    created: "2021-02-27T17:01:30.831772-08:00"
+    created: "2021-02-27T17:02:14.090881-08:00"
     description: A simple helm chart for deploying community-solid-server. Uses persistent
       volumes and stateful sets.
     digest: 925680a3a10b16748ace3ae0fc19bb3071aed5f582d8732f86ab8dc32085ba7c
@@ -122,7 +122,7 @@ entries:
     - https://itme.github.io/charts/community-solid-server-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v2
-    created: "2021-02-27T17:01:30.83158-08:00"
+    created: "2021-02-27T17:02:14.090679-08:00"
     description: A simple helm chart for deploying community-solid-server. Uses persistent
       volumes and stateful sets.
     digest: 6e5ff2d5ce1c43bd2db019b88d4c240b553804ec55a3737981e80a1343432a3d
@@ -132,7 +132,7 @@ entries:
     - https://itme.github.io/charts/community-solid-server-0.1.3.tgz
     version: 0.1.3
   - apiVersion: v2
-    created: "2021-02-27T17:01:30.831359-08:00"
+    created: "2021-02-27T17:02:14.090418-08:00"
     description: A simple helm chart for deploying community-solid-server. Uses persistent
       volumes and stateful sets.
     digest: 9a463819b092c98ffa9656eeda868bab86787f5812891cf8aad47727946db85c
@@ -142,7 +142,7 @@ entries:
     - https://itme.github.io/charts/community-solid-server-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
-    created: "2021-02-27T17:01:30.83112-08:00"
+    created: "2021-02-27T17:02:14.09019-08:00"
     description: A simple helm chart for deploying community-solid-server. Uses persistent
       volumes and stateful sets.
     digest: f8beead7cf5026fb9cde2e7fd6faf834eb30b35bf92537d964da96f7439046a9
@@ -152,7 +152,7 @@ entries:
     - https://itme.github.io/charts/community-solid-server-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
-    created: "2021-02-27T17:01:30.830852-08:00"
+    created: "2021-02-27T17:02:14.089909-08:00"
     description: A simple helm chart for deploying community-solid-server. Uses persistent
       volumes and stateful sets.
     digest: 11ad65a2c268e8f9a248319842c15d4246243fc539b13a4b647c1f1b662b2504
@@ -163,17 +163,17 @@ entries:
     version: 0.1.0
   node-solid-server:
   - apiVersion: v2
-    created: "2021-02-27T17:01:30.837249-08:00"
+    created: "2021-02-27T17:02:14.09632-08:00"
     description: A simple helm chart for deploying node-solid-server. Uses persistent
       volumes.
-    digest: d8b7a36823e95d62d0985e95ffbb6463419295213e89c60fadabd86b07b5fd36
+    digest: ce6297542f7562adc4a0edf8fcbd3322377532388bee849d1d71f0417c3f2a85
     name: node-solid-server
     type: application
     urls:
     - https://itme.github.io/charts/node-solid-server-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
-    created: "2021-02-27T17:01:30.836939-08:00"
+    created: "2021-02-27T17:02:14.09602-08:00"
     description: A simple helm chart for deploying node-solid-server. Uses persistent
       volumes.
     digest: bbb86baedefd809e397787e9985dd32ee1620833ab8233ccdff04e0be5b0198d
@@ -183,7 +183,7 @@ entries:
     - https://itme.github.io/charts/node-solid-server-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v2
-    created: "2021-02-27T17:01:30.836085-08:00"
+    created: "2021-02-27T17:02:14.095639-08:00"
     description: A simple helm chart for deploying node-solid-server. Uses persistent
       volumes.
     digest: 7a93b7a406e8aa34aadc2ccb669a1220703c3b3761828c0198ff7542d723a367
@@ -193,7 +193,7 @@ entries:
     - https://itme.github.io/charts/node-solid-server-0.1.3.tgz
     version: 0.1.3
   - apiVersion: v2
-    created: "2021-02-27T17:01:30.835792-08:00"
+    created: "2021-02-27T17:02:14.095308-08:00"
     description: A simple helm chart for deploying node-solid-server. Uses persistent
       volumes.
     digest: adfae1a8c0785c78c54e066303b3f26df22f300d91a08bb1ff226087d76752e6
@@ -203,7 +203,7 @@ entries:
     - https://itme.github.io/charts/node-solid-server-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
-    created: "2021-02-27T17:01:30.835445-08:00"
+    created: "2021-02-27T17:02:14.09501-08:00"
     description: A simple helm chart for deploying node-solid-server. Uses persistent
       volumes.
     digest: 89c5580beb0650aef9afe08b0e2dacf0387cf0f00204a919702e7d1b6f0af75d
@@ -213,7 +213,7 @@ entries:
     - https://itme.github.io/charts/node-solid-server-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
-    created: "2021-02-27T17:01:30.834501-08:00"
+    created: "2021-02-27T17:02:14.094676-08:00"
     description: A simple helm chart for deploying node-solid-server. Uses persistent
       volumes.
     digest: e50ddd2866cefc63e1ce0c12e783ac7df558afeed4e59680df98361e1469d360
@@ -224,7 +224,7 @@ entries:
     version: 0.1.0
   polis:
   - apiVersion: v2
-    created: "2021-02-27T17:01:30.83909-08:00"
+    created: "2021-02-27T17:02:14.098517-08:00"
     description: A Helm chart for deploying pol.is to Kubernetes. Not suitable for
       production use.
     digest: 9bf868d05a01e0d31589282f94319bb124a5498c11a935440163cfbbbc0dcfe3
@@ -234,7 +234,7 @@ entries:
     - https://itme.github.io/charts/polis-0.1.7.tgz
     version: 0.1.7
   - apiVersion: v2
-    created: "2021-02-27T17:01:30.838868-08:00"
+    created: "2021-02-27T17:02:14.098248-08:00"
     description: A Helm chart for deploying pol.is to Kubernetes. Not suitable for
       production use.
     digest: 3cb4cb6dfada48b4c54000be4ac4b5cec54eb75439f8a4db8b42e5328139716d
@@ -244,7 +244,7 @@ entries:
     - https://itme.github.io/charts/polis-0.1.6.tgz
     version: 0.1.6
   - apiVersion: v2
-    created: "2021-02-27T17:01:30.838651-08:00"
+    created: "2021-02-27T17:02:14.097984-08:00"
     description: A Helm chart for deploying pol.is to Kubernetes. Not suitable for
       production use.
     digest: 4c34f49bcb3b8decf95c99aedf228995bc2fd3a2eb03558370c9bba4161d3fc0
@@ -254,7 +254,7 @@ entries:
     - https://itme.github.io/charts/polis-0.1.5.tgz
     version: 0.1.5
   - apiVersion: v2
-    created: "2021-02-27T17:01:30.838416-08:00"
+    created: "2021-02-27T17:02:14.097705-08:00"
     description: A Helm chart for deploying pol.is to Kubernetes. Generated automatically
       using Kompose
     digest: ca8782c529fa89fe67ddb5d6ac73cf39b9e2bdf59e4a82ed70664fda133d1dc8
@@ -265,7 +265,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 0.1.3
-    created: "2021-02-27T17:01:30.838193-08:00"
+    created: "2021-02-27T17:02:14.097436-08:00"
     description: A Helm chart for deploying pol.is to Kubernetes. Generated automatically
       using Kompose
     digest: ca5cc8988f130fd820deca298afe1fe4f017b4946ea8fd2f7e31d63abe03889d
@@ -276,7 +276,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 0.1.2
-    created: "2021-02-27T17:01:30.837959-08:00"
+    created: "2021-02-27T17:02:14.097168-08:00"
     description: A Helm chart for deploying pol.is to Kubernetes. Generated automatically
       using Kompose
     digest: fe36b7e080c83150771e99521a2e9e1b7427e523befd0c5261f14365b6661997
@@ -287,7 +287,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2021-02-27T17:01:30.837736-08:00"
+    created: "2021-02-27T17:02:14.096887-08:00"
     description: A Helm chart for deploying pol.is to Kubernetes. Generated automatically
       using Kompose
     digest: 7115ecda8a12d6229fb06e500b31fa378533e519f3612fb43d64c5d8dbce4fe2
@@ -298,7 +298,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2021-02-27T17:01:30.837507-08:00"
+    created: "2021-02-27T17:02:14.096602-08:00"
     description: A Helm chart for deploying pol.is to Kubernetes. Generated automatically
       using Kompose
     digest: e9f6eef5e763acab97ce655457145ceac516d475a0c909e6eb9472559cfb1c87
@@ -307,4 +307,4 @@ entries:
     urls:
     - https://itme.github.io/charts/polis-0.1.0.tgz
     version: 0.1.0
-generated: "2021-02-27T17:01:30.830471-08:00"
+generated: "2021-02-27T17:02:14.089495-08:00"
