@@ -1,17 +1,19 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: StatefulSet
 metadata:
   name: {{ .Release.Name }}
 spec:
   selector:
     matchLabels:
       app: {{ .Release.Name }}
+  serviceName: {{ .Release.Name }}
   replicas: 1
   template:
     metadata:
       labels:
         app: {{ .Release.Name }}
     spec:
+      terminationGracePeriodSeconds: 10
       containers:
       - name: {{ .Release.Name }}
         image: {{ .Values.image.tag }}
@@ -31,21 +33,15 @@ spec:
             mountPath: "/opt/ssl"
             readOnly: true
           - name: {{ .Release.Name }}-data
-            mountPath: "/opt/solid/data"
+            mountPath: "/var/lib/solid/data"
           - name: {{ .Release.Name }}-db
-            mountPath: "/opt/solid/db"
+            mountPath: "/var/lib/solid/db"
           - name: {{ .Release.Name }}-config
             mountPath: "/opt/cm"
       volumes:
         - name: {{ .Release.Name }}-tls
           secret:
             secretName: {{ .Release.Name }}-tls
-        - name: {{ .Release.Name }}-data
-          persistentVolumeClaim:
-            claimName: {{ .Release.Name }}-data-pvc
-        - name: {{ .Release.Name }}-db
-          persistentVolumeClaim:
-            claimName: {{ .Release.Name }}-db-pvc
         - name: {{ .Release.Name }}-config
           configMap:
             name: {{ .Release.Name }}-cm
@@ -54,3 +50,22 @@ spec:
               path: config.json
       imagePullSecrets:
       - name: {{ .Release.Name }}-image-pull-secret
+  volumeClaimTemplates:
+  - metadata:
+      name: {{ .Release.Name }}-data
+    spec:
+      accessModes:
+        - ReadWriteOnce
+      storageClassName: gp2
+      resources:
+        requests:
+          storage: {{ .Values.dataSize }}
+  - metadata:
+      name: {{ .Release.Name }}-db
+    spec:
+      accessModes:
+        - ReadWriteOnce
+      storageClassName: gp2
+      resources:
+        requests:
+          storage: {{ .Values.dbSize }}
