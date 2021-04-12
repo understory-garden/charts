@@ -1,4 +1,4 @@
-# itme Charts
+# Understory Charts
 
 This is a simple set of charts we use for a variety of different open source projects. Below is a list of currently supported charts:
 
@@ -8,4 +8,4 @@ This is a simple set of charts we use for a variety of different open source pro
 
 # Releases
 
-Charts are released using the package-and-deploy script from the root. They are hosted using github pages at "https://itme.github.io/charts/"
+Charts are released using the package-and-deploy script from the root. They are hosted using github pages at "https://understory-garden.github.io/charts/"
